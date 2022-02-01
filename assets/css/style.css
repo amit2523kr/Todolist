@@ -1,0 +1,124 @@
+body{
+    font-family:sans-serif;
+    background: url('/image/design.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+/* Designing main body of our html page */
+#main_body{
+    height:auto;
+    width: 40%;
+    margin-left: 23rem;
+    background-color:#FFEFD5;
+    border: 1px solid midnightblue;
+}
+
+#para{
+    padding: 1.5rem;
+}
+.fa-caret-down{
+    margin-left: 9rem;
+}
+#desc{
+    height: auto;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+#cat_date{
+    margin-top: -2rem;
+    border-bottom: 1px solid grey;
+}
+#duedate{
+    border-bottom: 1px solid grey;
+    margin-top: -2.5rem;
+}
+h1{
+    color:grey;
+    text-align: center;
+}
+#specification{
+    outline: none;
+    border: none;
+    background-color:#FFEFD5;
+    margin-top: -2rem;
+    padding-left: 1.6rem;
+}
+#category{
+    outline: none;
+    border: none;
+    /* height:3rem; */
+    width:12rem;
+    margin-top: -2.4rem;
+    background-color:#FFEFD5;
+    padding-left: 1.6rem;
+    margin-bottom: 3rem;
+}
+#date{
+    outline: none;
+    border: none;
+    background-color:#FFEFD5;
+    margin-left: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+}
+
+/* designing the adding task button */
+#add{
+    height: 2.2rem;
+    width: 8rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color:white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 11rem;
+}
+
+#todolist{
+    border: 1px solid gray;
+}
+/* styling the delete button  */
+#delete{
+    height: 2rem;
+    width:4.5rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: white;
+    position: absolute;
+    margin-left: 23rem;
+    margin-top: 0.25rem;    
+}
+/* styling check box */
+.cardcheckbox {
+    opacity: 0;
+      
+    }
+
+.cardcheckbox:hover,
+.cardcheckbox:checked {
+    opacity: 1;
+}
+.calendar{
+    margin-left: 1.3rem;
+    border-bottom: 1px solid gray;
+}
+/* styling the category button to specify the category of what type of work is done. */
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height:2rem;
+    width:4.5rem;
+    color: white;
+    position: relative;
+    margin-left: 18rem;
+    margin-top: -4.5rem;
+    background-color:midnightblue;
+}

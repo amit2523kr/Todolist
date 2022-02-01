@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <%= locals.title %>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        
+        
+        <main id="main_body">
+            <!-- heading -->
+        <h1><i class="far fa-clipboard-list"></i> TODO  App</h1>
+        <!-- form for posting our form data to our site -->
+        <form action="/todo-list" method="post">
+           <div id="desc">
+            <p id="para">Description</p>
+            <input id="specification" type="text" name="Description" placeholder="What do you need to do?" required>
+        </div>
+            <div id="cat_date">
+            <p id="para">Category
+            </p>
+            <input id="category" type="text" name="Category" placeholder="Specify  a category?" required>
+            </div>
+            <div id="duedate">
+            <p id="para">Due date</p>
+            <input type="date" id="date" name="Today_date">
+            </div>
+            <div>
+                <button id="add"><i class="fal fa-plus"></i> ADD TASK</button> 
+            </div>
+            </form>
+           
+           
+
+            <div id="todolist">
+                <% for(let i of todolistapp){%>
+                    <!-- deleting an object from the website -->
+                <div id="display_todolist">
+                       <a href="/delete-todolist/?id=<%= i._id %>">
+                        <button  id="delete"><i class="far fa-trash-alt"></i></i> Delete</button>
+                      </a>
+                      
+                      <h4> <input type="checkbox" class="cardcheckox" align="right"><%= i.Description%></h4>
+                    <p class="calendar"><i class="far fa-calendar-alt"></i><%= i.Today_date%></p>
+                   <button class="btn"><%= i.Category%> </button>
+                </div>
+                <%}%>
+            </div>
+        </main>
+    </body>
+</html>
